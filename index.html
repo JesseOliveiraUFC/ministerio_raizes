@@ -468,6 +468,7 @@
           <span class="audio-time">0:00</span>
         </div>
         <audio src="assets/audio/tributo-demo.mpeg" preload="none"></audio>
+        <button class="btn-letra" data-song="tributo"><i class="fas fa-align-left"></i> Ver letra</button>
       </div>
 
       <!-- Track 2: Filho de Deus -->
@@ -499,6 +500,7 @@
           <span class="audio-time">0:00</span>
         </div>
         <audio src="assets/audio/filho-de-deus-demo.mpeg" preload="none"></audio>
+        <button class="btn-letra" data-song="filho"><i class="fas fa-align-left"></i> Ver letra</button>
       </div>
 
       <!-- Track 3: Eu Clamo -->
@@ -530,6 +532,7 @@
           <span class="audio-time">0:00</span>
         </div>
         <audio src="assets/audio/eu-clamo-demo.mpeg" preload="none"></audio>
+        <button class="btn-letra" data-song="clamo"><i class="fas fa-align-left"></i> Ver letra</button>
       </div>
 
       <!-- Track 4: Vinde a Mim -->
@@ -561,6 +564,7 @@
           <span class="audio-time">0:00</span>
         </div>
         <audio src="assets/audio/vinde-a-mim-demo.mpeg" preload="none"></audio>
+        <button class="btn-letra" data-song="vinde"><i class="fas fa-align-left"></i> Ver letra</button>
       </div>
 
       <!-- Track 5: Cantai -->
@@ -592,6 +596,7 @@
           <span class="audio-time">0:00</span>
         </div>
         <audio src="assets/audio/cantai-demo.mpeg" preload="none"></audio>
+        <button class="btn-letra" data-song="cantai"><i class="fas fa-align-left"></i> Ver letra</button>
       </div>
 
       <!-- Track 6: Eu Vou Subir -->
@@ -623,6 +628,7 @@
           <span class="audio-time">0:00</span>
         </div>
         <audio src="assets/audio/eu-vou-subir-demo.mpeg" preload="none"></audio>
+        <button class="btn-letra" data-song="subir"><i class="fas fa-align-left"></i> Ver letra</button>
       </div>
 
     </div><!-- .tributo-tracks -->
@@ -852,6 +858,22 @@
   </div>
 </footer>
 
+
+<!-- Lyrics Modal -->
+<div class="letra-modal" id="letraModal" role="dialog" aria-modal="true" aria-labelledby="letraTitulo">
+  <div class="letra-overlay" id="letraOverlay"></div>
+  <div class="letra-box">
+    <div class="letra-header">
+      <div>
+        <p class="letra-tag">Letra</p>
+        <h3 class="letra-title" id="letraTitulo"></h3>
+        <p class="letra-comp" id="letraComp"></p>
+      </div>
+      <button class="letra-close" id="letraClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="letra-content" id="letraConteudo"></div>
+  </div>
+</div>
 
 <!-- Scripts -->
 <script src="assets/js/main.js"></script>

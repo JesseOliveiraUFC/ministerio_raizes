@@ -222,3 +222,253 @@ const activeObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-40% 0px -55% 0px' });
 
 sections.forEach(s => activeObserver.observe(s));
+
+/* ── Lyrics Modal ── */
+const lyrics = {
+  tributo: {
+    title: 'Tributo',
+    comp: 'Composição: Jessé Oliveira',
+    sections: [
+      { label: 'Estrofe 1', lines: [
+        'Ao Deus que abriu o mar vermelho',
+        'Aos pés enxutos fez seu povo passar',
+        'Fez as águas do Nilo tornarem em sangue',
+        'E no meio das pedras fez água brotar.'
+      ]},
+      { label: 'Pré-Refrão', lines: [
+        'Visitou o seu povo com a coluna de fogo',
+        'Alimentou Israel com o Maná',
+        'Humilhou, destruiu todos seus inimigos',
+        'Derrotou a Faraó, nas águas fez se afogar'
+      ]},
+      { label: 'Refrão', lines: [
+        'A Ele seja a Glória',
+        'A Ele seja o Louvor',
+        'A Ele a majestade e o Poder',
+        'Meu Tributo ao Rei dos reis.'
+      ]},
+      { label: 'Estrofe 2', lines: [
+        'Ao Deus que livrou Daniel dos leões',
+        'A seus três amigos chegou pra salvar',
+        'Na fornalha ardente passeou com eles',
+        'Ele é o Leão da Tribo de Judá'
+      ]},
+      { label: 'Pré-Refrão', lines: [
+        'Derrubou as muralhas de Jericó',
+        'Sete dias ao seu povo Ele fez marchar',
+        'Com buzinas, tambores e trombetas',
+        'Todo o povo adorou quando as muralhas derrubou'
+      ]},
+      { label: 'Refrão', lines: [
+        'A Ele seja a Glória',
+        'A Ele seja o Louvor',
+        'A Ele a majestade e o Poder',
+        'Meu Tributo ao Rei dos reis.'
+      ]}
+    ]
+  },
+  filho: {
+    title: 'Filho de Deus',
+    comp: 'Composição: Jessé Oliveira',
+    sections: [
+      { label: 'Estrofe', lines: [
+        'Jesus, Teu Nome é Santo',
+        'Teu Nome é Glorioso',
+        'Rei da Glória, Rei dos reis',
+        'Tu és SENHOR',
+        '',
+        'Deixou o Seu Trono de Glória',
+        'Pra mudar a minha história',
+        'Numa cruz sofreu, num madeiro',
+        'Morreu em meu lugar'
+      ]},
+      { label: 'Pré-Refrão', lines: [
+        'Exaltado sobre os povos',
+        'Tu és digno de Glória',
+        'Nos prostramos, declaramos',
+        'Tu és Santo, Santo, Santo',
+        'Santo é o SENHOR'
+      ]},
+      { label: 'Refrão', lines: [
+        'Jesus Cristo, Tu és o Filho de Deus',
+        'Meu amado, onde encontro salvação.'
+      ]}
+    ]
+  },
+  clamo: {
+    title: 'Eu Clamo',
+    comp: 'Composição: Jessé Oliveira',
+    sections: [
+      { label: 'Estrofe 1', lines: [
+        'Quando os meus pés não tocam o chão',
+        'E a minha vida vai na contramão',
+        'Quando eu não vejo mais solução',
+        'Eu clamo, eu clamo, eu clamo por ele'
+      ]},
+      { label: 'Estrofe 2', lines: [
+        'Quando eu não tenho mais pra onde ir',
+        'E a minha luta parece sem fim',
+        'E quando as trevas lutam contra mim',
+        'Eu clamo, eu clamo, eu clamo por ele'
+      ]},
+      { label: 'Pré-Refrão', lines: [
+        'Ele é a fonte eterna de amor',
+        'Ele é a âncora, o meu farol',
+        'Sol da justiça que me conquistou',
+        'Eu não temerei, o Seu Nome eu clamarei'
+      ]},
+      { label: 'Refrão', lines: [
+        'Eu clamo por Cristo Jesus',
+        'Eu chamo pelo Deus da luz',
+        'Salvador, Redentor, Dono de tudo em mim',
+        'Me salvou, derramou seu sangue carmesim'
+      ]},
+      { label: 'Ponte', lines: [
+        'Envia os anjos pra me ajudar',
+        'Enviou o Seu Filho pra morrer em meu lugar',
+        'Faz céus e terra vir ao meu favor',
+        'Faz da morte a vida, faz tudo porque me amou',
+        'Faz tudo porque me amou.'
+      ]}
+    ]
+  },
+  vinde: {
+    title: 'Vinde a Mim',
+    comp: 'Composição: Jessé Oliveira',
+    sections: [
+      { label: 'Estrofe 1', lines: [
+        'Esta é uma canção',
+        'para aqueles que têm sede e fome',
+        'Que estão sem direção',
+        'e não têm nenhum lugar pra onde ir'
+      ]},
+      { label: 'Estrofe 2', lines: [
+        'Preste muita atenção',
+        'existe alguém que te ama e te quer bem',
+        'Ele quer te dar a mão',
+        'e te mostrar que é possível ser feliz'
+      ]},
+      { label: 'Refrão', lines: [
+        'Vinde a mim vós que estais cansados',
+        'Vinde a mim todos oprimidos',
+        'Vinde a mim pois vos darei descanso',
+        'Sou teu escudo, Sou o teu abrigo',
+        'Eu sou o pão para quem tem fome',
+        'Eu sou a água para quem tem sede',
+        'Eu sou o Caminho, a Verdade e a Vida',
+        'Eu Sou o que Sou, Eu Sou Jesus'
+      ]},
+      { label: 'Estrofe 3', lines: [
+        'Se você pensa que acabou',
+        'Eu te digo que é só o início',
+        'De uma vida cheia de amor',
+        'De esperança e alegria sem fim',
+        '',
+        'O teu preço Ele pagou',
+        'Ele é o Perfeito Sacrifício',
+        'Teu pecado perdoou',
+        'Ele te diz: Filho venha até mim.'
+      ]},
+      { label: 'Ponte', lines: [
+        'Não temas pois Eu Sou contigo',
+        'Sou teu escudo, Sou o Teu abrigo',
+        'Eu Sou aquele que nunca te abandonou',
+        'Eu vim aqui para mudar tua sorte',
+        'Eu vim aqui pra te livrar da morte',
+        'Eu sou o que sou, Eu sou JESUS.'
+      ]}
+    ]
+  },
+  cantai: {
+    title: 'Cantai',
+    comp: 'Composição: Jessé Oliveira',
+    sections: [
+      { label: 'Estrofe', lines: [
+        'Abram-se, oh, portais eternos',
+        'Porque o Rei da Glória vem',
+        'Porque o Rei da Glória vem',
+        '',
+        'Entrai em Seus átrios com brados de Louvor',
+        'Ele é o Sol da Justiça, Jesus Cristo é o SENHOR.',
+        'Purificai vossas vestes para entrar diante do REI',
+        'Pois com ELE nas nuvens para a Glória subirei'
+      ]},
+      { label: 'Refrão', lines: [
+        'Cantai um novo cântico ao Rei dos reis, Jesus',
+        'Louvai Seu Santo Nome, Sua morte ali na cruz',
+        'Buscai pois é chegado o Reino do meu Salvador',
+        'Clamai pois lá na Glória com Jesus morar eu vou'
+      ]}
+    ]
+  },
+  subir: {
+    title: 'Eu Vou Subir',
+    comp: 'Composição: Jessé Oliveira',
+    sections: [
+      { label: 'Estrofe', lines: [
+        'Ele vem saltando sobre os montes',
+        'Os Seus olhos são chamas de fogo',
+        'Ele vem vestido de Glória',
+        'Vem buscar, resgatar o seu povo'
+      ]},
+      { label: 'Pré-Refrão', lines: [
+        'Em Sua coxa estava escrito',
+        'Rei dos reis, Senhor dos Senhores',
+        'Ele é o Sol da Justiça',
+        'Exaltado em meio aos louvores'
+      ]},
+      { label: 'Refrão', lines: [
+        'Eu vou Subir, nas nuvens eu vou subir',
+        'Verei o meu amado num corpo glorificado',
+        'Para a Glória eu vou subir',
+        '',
+        'Eu vou subir, nas nuvens eu vou subir',
+        'Na mansão celestial, ruas de ouro e cristal',
+        'Para a Glória eu vou subir',
+        '',
+        'Porque tudo é por Ele e tudo é para Ele',
+        'Com Jesus eu vou subir'
+      ]}
+    ]
+  }
+};
+
+function buildLetraHTML(song) {
+  return song.sections.map(sec => {
+    const lines = sec.lines.map(l =>
+      `<span class="letra-line">${l || '&nbsp;'}</span>`
+    ).join('');
+    return `<span class="letra-section">${sec.label}</span>${lines}`;
+  }).join('');
+}
+
+const letraModal  = document.getElementById('letraModal');
+const letraOverlay = document.getElementById('letraOverlay');
+const letraClose  = document.getElementById('letraClose');
+const letraTitulo = document.getElementById('letraTitulo');
+const letraComp   = document.getElementById('letraComp');
+const letraConteudo = document.getElementById('letraConteudo');
+
+function openLetra(key) {
+  const song = lyrics[key];
+  if (!song) return;
+  letraTitulo.textContent = song.title;
+  letraComp.textContent = song.comp;
+  letraConteudo.innerHTML = buildLetraHTML(song);
+  letraConteudo.scrollTop = 0;
+  letraModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLetra() {
+  letraModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.btn-letra').forEach(btn => {
+  btn.addEventListener('click', () => openLetra(btn.dataset.song));
+});
+
+letraOverlay.addEventListener('click', closeLetra);
+letraClose.addEventListener('click', closeLetra);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLetra(); });
