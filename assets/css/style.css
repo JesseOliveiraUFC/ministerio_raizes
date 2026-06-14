@@ -211,6 +211,7 @@ h1,h2,h3,h4 { font-family: var(--font-serif); line-height: 1.2; }
 .social-link:hover { color: var(--gold-light); }
 .team-sep { text-align: center; font-family: var(--font-serif); font-size: 1rem; color: var(--text-secondary); margin-bottom: 28px; letter-spacing: .12em; text-transform: uppercase; font-style: italic; }
 .team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.team-grid-5 { grid-template-columns: repeat(5,1fr); }
 .team-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: var(--trans); text-align: center; }
 .team-card:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,.4); }
 .team-img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: top; filter: grayscale(35%); transition: var(--trans); }
@@ -425,12 +426,12 @@ h1,h2,h3,h4 { font-family: var(--font-serif); line-height: 1.2; }
   .parceria-grid { grid-template-columns: repeat(2,1fr); }
   .duo-card { grid-template-columns: 1fr; max-width: 400px; }
   .duo-card-img { aspect-ratio: 4/3; }
-  .team-grid { grid-template-columns: repeat(3,1fr); }
+  .team-grid, .team-grid-5 { grid-template-columns: repeat(3,1fr); }
   .footer-bot-inner { flex-direction: column; gap: 14px; text-align: center; }
 }
 @media (max-width: 480px) {
   .sobre-stats { grid-template-columns: repeat(3,1fr); }
-  .team-grid { grid-template-columns: 1fr 1fr; }
+  .team-grid, .team-grid-5 { grid-template-columns: 1fr 1fr; }
   .parceria-grid { grid-template-columns: 1fr 1fr; }
   .yt-stats { grid-template-columns: 1fr 1fr; }
   .hero-actions { flex-direction: column; align-items: center; }
