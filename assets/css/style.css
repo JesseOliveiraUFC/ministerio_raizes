@@ -234,7 +234,7 @@ h1,h2,h3,h4 { font-family: var(--font-serif); line-height: 1.2; }
 }
 .ep-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
 .ep-cover-wrap { position: relative; }
-.ep-cover-img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow); transition: var(--trans); }
+.ep-cover-img { width: 100%; aspect-ratio: 5 / 3; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow); transition: var(--trans); }
 .ep-cover-glow { position: absolute; inset: -15px; background: radial-gradient(ellipse, var(--gold-glow) 0%, transparent 70%); border-radius: var(--radius-lg); z-index: -1; opacity: 0; transition: opacity .4s ease; }
 .ep-cover-wrap:hover .ep-cover-glow { opacity: 1; }
 .ep-cover-wrap:hover .ep-cover-img { transform: scale(1.02); }
