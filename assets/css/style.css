@@ -223,18 +223,14 @@ h1,h2,h3,h4 { font-family: var(--font-serif); line-height: 1.2; }
    DISCOGRAFIA
 ════════════════════════════════════════ */
 #discografia { background: var(--bg-base); }
-.disco-hd { margin-bottom: 48px; }
-.disco-tabs { display: flex; gap: 10px; margin-bottom: 44px; flex-wrap: wrap; }
-.disco-tab {
-  padding: 11px 22px; border-radius: 50px; border: 1.5px solid var(--border);
-  background: transparent; color: var(--text-secondary); font-family: var(--font-sans);
-  font-size: .87rem; font-weight: 500; cursor: pointer; transition: var(--trans);
+.disco-hd { margin-bottom: 56px; }
+.disco-ep { margin-bottom: 72px; }
+.disco-ep:last-child { margin-bottom: 0; }
+.disco-ep-divider {
+  border: none; height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+  margin: 72px 0;
 }
-.disco-tab:hover { border-color: var(--gold); color: var(--gold-light); }
-.disco-tab.active { background: var(--gold); border-color: var(--gold); color: var(--bg-deep); font-weight: 700; }
-.disco-panel { display: none; animation: fadeSlide .4s ease; }
-.disco-panel.active { display: block; }
-@keyframes fadeSlide { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .ep-layout { display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: start; }
 .ep-cover-wrap { position: relative; }
 .ep-cover-img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow); transition: var(--trans); }

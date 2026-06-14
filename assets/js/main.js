@@ -49,19 +49,6 @@ document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => {
   revealObserver.observe(el);
 });
 
-/* ── Disco Tabs ── */
-const tabs = document.querySelectorAll('.disco-tab');
-const panels = document.querySelectorAll('.disco-panel');
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = tab.dataset.tab;
-    tabs.forEach(t => t.classList.remove('active'));
-    panels.forEach(p => p.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById(target).classList.add('active');
-  });
-});
 
 /* ── Audio Players ── */
 let currentAudio = null;
