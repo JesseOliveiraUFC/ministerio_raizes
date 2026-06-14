@@ -3,10 +3,10 @@
 ═══════════════════════════════════════════════════ */
 
 :root {
-  --bg-deep: #060402;
-  --bg-base: #0F0A06;
-  --bg-surface: #181008;
-  --bg-card: #221508;
+  --bg-deep: #0D0904;
+  --bg-base: #1A1108;
+  --bg-surface: #23160A;
+  --bg-card: #2E1C0C;
   --gold: #C8932A;
   --gold-light: #E8B840;
   --gold-shine: #F5D78B;
@@ -14,11 +14,11 @@
   --gold-glow-sm: rgba(200,147,42,0.15);
   --cream: #F5EDD8;
   --text-primary: #EDE0C4;
-  --text-secondary: #9A8060;
-  --text-muted: #665540;
-  --border: rgba(200,147,42,0.2);
-  --border-hover: rgba(200,147,42,0.55);
-  --shadow: 0 24px 64px rgba(0,0,0,0.75);
+  --text-secondary: #AE9272;
+  --text-muted: #7A6548;
+  --border: rgba(200,147,42,0.22);
+  --border-hover: rgba(200,147,42,0.58);
+  --shadow: 0 24px 64px rgba(0,0,0,0.65);
   --radius: 12px;
   --radius-lg: 20px;
   --trans: all 0.35s cubic-bezier(0.4,0,0.2,1);
@@ -28,13 +28,13 @@
 
 *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: 78px; }
-body { font-family: var(--font-sans); background: var(--bg-base); color: var(--text-primary); overflow-x: hidden; line-height: 1.65; }
+body { font-family: var(--font-sans); background: var(--bg-base); color: var(--text-primary); overflow-x: hidden; line-height: 1.7; font-size: 16px; }
 img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg-deep); }
 ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
-h1,h2,h3,h4 { font-family: var(--font-serif); line-height: 1.2; }
+h1,h2,h3,h4 { font-family: var(--font-serif); line-height: 1.25; letter-spacing: -0.01em; }
 
 /* ── Layout ── */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
@@ -43,12 +43,12 @@ h1,h2,h3,h4 { font-family: var(--font-serif); line-height: 1.2; }
 /* ── Typography helpers ── */
 .badge {
   display: inline-flex; align-items: center; gap: 8px;
-  font-size: .72rem; font-weight: 700; letter-spacing: .22em;
+  font-size: .73rem; font-weight: 700; letter-spacing: .2em;
   text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
 }
 .badge::before { content: ''; width: 28px; height: 1.5px; background: var(--gold); flex-shrink: 0; }
-.section-title { font-size: clamp(2rem,5vw,3.4rem); font-weight: 700; color: var(--cream); margin-bottom: 14px; }
-.section-sub { font-size: 1.05rem; color: var(--text-secondary); max-width: 600px; line-height: 1.75; }
+.section-title { font-size: clamp(2rem,5vw,3.4rem); font-weight: 700; color: var(--cream); margin-bottom: 16px; }
+.section-sub { font-size: 1.07rem; color: var(--text-secondary); max-width: 600px; line-height: 1.8; }
 .gold-text { color: var(--gold-light); }
 .divider { width: 52px; height: 3px; background: linear-gradient(to right,var(--gold),var(--gold-light)); border-radius: 2px; margin: 18px 0; }
 
